@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var cnpj = "11222333000100";
+        var cpf = "12312312345"
+        //Expressão Regular c replace -Regex
+        // /^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})
+        //  "$1.$2.$3/$4-$5"
+        console.log(cnpj.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/, "$1.$2.$3/$4-$5"));
+        console.log(cpf.replace(/^(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4"));
+
+    </script>
+</body>
+</html>
