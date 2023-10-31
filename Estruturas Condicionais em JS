@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas Condicionais</title>
+</head>
+
+<body>
+    <!--  https://www.javascriptprogressivo.net/2018/08/Exercicios-IF-ELSE-JavaScript.html  -->
+
+
+    <h3>Ex1 - Vogal ou Consoante?</h3>
+    <input id="char" type="text"><br>
+    <button onclick="check()">Checar</button>
+    <script type="text/JavaScript">
+       function  check() {
+        var letra = document.getElementById("char").value;
+        letra = letra.toLowerCase();
+
+        if(letra=='a' || letra=='e' || letra=='i' || letra=='o' || letra=='u')
+        alert("Vogal");
+        else
+        alert("Consoante");
+       }
+    </script>
+
+    <h3>==============================================</h3>
+    <h3>Ex2 - Média de números</h3>
+    Primeira nota <input id="nota1" type="number"> <br>
+    Segunda nota <input id="nota2" type="number"><br>
+    <button onclick="media()">Calcula a média</button>
+    <script type="text/javascript">
+        function media() {
+            var nota1 = parseFloat(document.getElementById("nota1").value);
+            var nota2 = parseFloat(document.getElementById("nota2").value);
+            var media = (nota1 + nota2) / 2;
+
+            if (media >= 7)
+                alert("Aprovado! média: " + media);
+            else
+                alert("Reprovado. média: " + media);
+        }
+
+    </script>
+
+    <h3>==============================================</h3>
+    <h3>Ex3 Maior dos números</h3>
+    Primeiro valor <input id="num1" type="number"><br>
+    Segundo valor <input id="num2" type="number"><br>
+    Terceiro valor <input id="num3" type="number"><br>
+    <button onclick="maiorValor()">Maior valor</button>
+    <script type="text/javascript">
+        function maiorValor() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var num3 = parseFloat(document.getElementById("num3").value);
+
+            var maiorValor = 0;
+
+            if (num1 < num2 && num3 < num2) {
+                maiorValor = num2;
+            }
+            else if (num3 > num2 && num3 > num1) {
+                maiorValor = num3;
+            }
+            else {
+                maiorValor = num1;
+            }
+            alert("Maior: " + maiorValor)
+        }
+    </script>
+
+</body>
+</html>
