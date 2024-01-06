@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isEmpty</title>
+</head>
+    <script>
+        //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_validation_empty_input
+        function validateForm(){
+            var x = document.forms["myForm"]["fname"].value;
+            if (x==""||x==null||x.length<3){
+                alert('O nome precisa ser preenchido')
+                return false;
+            }
+        }
+    </script>
+
+<body>
+    <h2>Validação JS para campo de entrada vazio</h2>
+    <p>Tente submeter o formulário sem preenchê-lo</p>
+    <form name = "myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+    Nome: <input type="text" name="fname">
+    <input type="submit" value="Submeter">
+    </form>
+
+</body>
+
+</html>
