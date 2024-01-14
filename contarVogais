@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex JS</title>
+</head>
+<body>
+<!--Ex para contar vogais-->
+    <form action="vogais">Digite o texto: <input type="text" id="idString">
+    <br><button type="button" name="button" id="button" onclick="contaVogais()">Calcular vogais</button>
+    </form>
+
+    <br><span id="idTexto"></span>
+ 
+    <script>
+        function contaVogais() {
+            var texto = document.getElementById("idString").value;
+            
+            const vogais = texto.match(/[aeiou]/gi); //g=global i=não diferencia Lower to Upper
+            const cont = vogais.length;
+
+            /* outra maneira
+            var cont = 0;
+            for(var i=0; i < texto.length; i++){
+                if (texto.charAt(i)=="a" || texto.charAt(i)=="e" || texto.charAt(i)=="i" || texto.charAt(i)=="o" || texto.charAt(i)=="u" ){
+                cont++;
+                }
+            } */
+        
+        document.getElementById("idTexto").innerHTML = "Total de vogais: "+cont;
+    }
+    </script>
+
+</body>
+</html>
