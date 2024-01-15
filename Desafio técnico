@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex Desafio Técnico</title>
+</head>
+
+<body>
+    <!--Desafio
+        Trazer a soma dos produtos do carrinho e se é elegível frete grátis(acima $300).
+        https://www.youtube.com/watch?v=UaJltzVxQI4
+    -->
+    <script>
+        var cart_products = [
+            {
+                'product_id':'IN2350',
+                'product_name':'Teclado mecânico',
+                'product_price':'650.00',
+                'product_quantity':'1'
+            },
+            {
+                'product_id':'IN4566',
+                'product_name':'Monitor Gamer',
+                'product_price':'1009.99',
+                'product_quantity':'1'
+            },
+            {
+                'product_id':'ES7112',
+                'product_name':'Post-it',
+                'product_price':'12.00',
+                'product_quantity':'1'
+            }
+
+
+
+        ]
+
+        const getPriceInfo = cart_products => {
+            const totalPrice = cart_products.reduce((acc, { product_price }) => acc + Number(product_price), 0)//number transforma a string 
+            const isfreeShipping = totalPrice > 300
+
+            return [totalPrice, isfreeShipping]
+        }
+        console.log(getPriceInfo(cart_products))
+    </script>
+
+
+</body>
+
+</html>
