@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumprimento Personalizado</title>
+
+</head>
+
+<body>
+
+    <h2>Digite seu nome:</h2>
+    <input type="text" id="nomeInput" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" maxlength="255">
+    <button onclick="exibirMensagem()">Clique aqui</button>
+
+    <script>
+            const nomeInput = document.getElementById("nomeInput");
+            const nomeUsuario = nomeInput.value.trim().toUpperCase();
+
+
+        function exibirMensagem() {
+            
+            // Verifica se o nome contém apenas letras
+            if (/^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/.test(nomeUsuario)) {
+                alert("Olá " + nomeUsuario + '!');
+            } else {
+                alert("Por favor, insira apenas letras no nome.");
+            }
+            console.log(nomeUsuario);
+        }
+        
+    </script>
+    <script>
+        function separaNome() {
+            console.log(nomeUsuario);
+            //próx passo: criar 2 variáveis uma apenas com o primeiro nome, e a outra com o último nome do usuário
+        }
+
+    </script>
+
+</body>
+
+</html>
