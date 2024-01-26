@@ -1,6 +1,6 @@
 Exercícios de JavaScript
 
-Bem-vindo ao repositório de exercícios de JavaScript! Este é um espaço dedicado aos exercícios práticos que desenvolvi durante meus estudos em JavaScript e experiência no dia a dia. 
+Bem-vindo ao repositório de exercícios de JavaScript! Este é um espaço dedicado aos exercícios práticos que desenvolvi durante meus estudos em JavaScript e experiências no dia a dia. 
 Aqui, você encontrará uma variedade de desafios que abrangem diferentes aspectos da linguagem, desde conceitos básicos até tópicos mais avançados.
 
 Estrutura do Repositório
