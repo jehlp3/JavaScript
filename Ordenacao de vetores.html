@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Abra o seu console! :)</p>
+    <br>
+    <h2>Variávies SIMPLES - Armazenam um valor por vez</h2>
+    <h2>Variáveis COMPOSTAS - Armazenam vários valores em uma mesma estrutura</h2>
+    <script>
+        let num = [5, 2, 3, 8, 4]
+        num[5] = 9 //número na posição 5 do vetor recebe o valor 9
+        num[6] = 24
+        num[7] = 45
+        num[8] = 100;
+        num.push(7) //.push acrescenta um novo valor ao vetor
+
+        console.log(`Nosso vetor é o ${num} `)
+        console.log(num.length) //retorna o tamanho do array
+
+        //console.log(num.sort()) 
+        //.sort() ordena os números, porém baseado na ordenação alfabética da tabela Unicode
+
+        function comparaNum(a, b) {
+            if (a == b) return 0;
+            if (a < b) return -1;
+            if (a > b) return 1;
+        }
+        console.log(num.sort(comparaNum));
+
+        for (let pos = 0; pos < num.length; pos++) {
+            console.log(`A posição ${pos} tem o valor: ${num[pos]}`)
+        }
+
+
+    </script>
+    <script>
+        let varNum = [5, 8, 7, 9, 3]
+        varNum.push(1)
+        //varNum.push(4)
+        varNum.sort();
+        console.log(varNum)
+        let posicaoNum = varNum.indexOf(4)
+        if (posicaoNum == -1) {
+            console.log(`O valor 4 não foi encontrado`)
+        } else {
+            console.log(`O valor 4 está na posição ${posicaoNum} do vetor`)
+        }
+    </script>
+</body>
+
+</html>
