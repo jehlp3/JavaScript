@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução JS</title>
+</head>
+<!--https://www.youtube.com/watch?v=63inpYKW7I4&list=PL-R1FQNkywO55236fniVp6LKGAVZXcmnr-->
+<body>
+    <script>
+        let a = 10, b = 10, c = 10;
+        console.log(a + b + c);
+    </script>
+
+    <script>
+        //var - escopo de função
+        // let e const - escopo de bloco
+
+        let minhaVariavel, outraVariavel;
+        minhaVariavel = "Olá";
+        outraVariavel = 100
+        console.log(minhaVariavel + " " + outraVariavel)
+    </script>
+
+    <script>
+        //Tipos Primitivos
+        //boolean, string, number, undefined, null
+        let meuNumber = 10;
+        let minhaString = "Olá, mundo!";
+        let meuBoolean = true;
+        let meuNull = null;
+        let meuUndefined = undefined;
+
+        console.log("O tipo do meu número é: " + typeof meuNumber);
+        console.log("O tipo da minha string é: " + typeof minhaString);
+        console.log("O tipo do meu boolean é: " + typeof meuBoolean);
+        console.log("O tipo do meu null é: " + typeof meuNull);//Little bug <3
+        console.log("O tipo do meu Undefined é: " + typeof meuUndefined);
+        //PARÂMETROS - Variáveis que vc passa para o método
+    </script>
+<script>
+Operações básicas
++ soma
+- subtração
+* multiplicação
+/ divisão
+** 
+% resto da divisão
+parseInt // transforma um valor para inteiro
+parseFloat //transforma um valor para número flutuante, 
+</script>
+
+
+<script>
+    let string1 = "Paulo Raoni"
+    console.log(string1)
+    let nome1 = "Maria"
+    let nome2 = "Aparecida"
+    let nomeCompleto = nome1+" "+nome2;
+    console.log(nomeCompleto);
+</script>
+
+<script>
+    //Transformando uma string em um array de caracteres
+    var meuNome = "Ana da Silva Santos Pereira Oliveira Costa Mendonça Rodrigues Almeida"
+    var array = meuNome.split(' ');
+    console.log(array);
+    console.log(array[0]); //Pegando apenas o primeiro nome
+    var primeiroNome = array[0];
+    console.log(primeiroNome);
+    var ultimoNome = array[array.length -1];
+    console.log(ultimoNome);
+    var primeiroeUltimoNome = primeiroNome+" "+ultimoNome;
+    console.log(primeiroeUltimoNome);
+    var nomeSobrenome = array.meuNome
+
+</script>
+
+
+</body>
+
+</html>

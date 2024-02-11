@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Abra o seu console! :)</p>
+
+    <script>
+        //https://www.youtube.com/watch?v=yFrd7712G3I
+        let pessoa = {
+            nome: "Maria",
+            idade: 35,
+            peso: 65,
+            altura: 1.70,
+            doador: false,
+        }
+        let produtos = {
+            descricaoProd: [],
+            precoProd: [],
+        }
+        const carros = {
+            marca: ['Ford', 'Fiat', 'GM'],
+            modelo: ['Ka', 'Uno', 'Corsa'],
+            ano: [1999, 2005, 2010],
+        }
+        /*acessando a propriedade (console):
+        pessoa.nome
+        pessoa.idade
+        pessoa['nome']
+        pessoa['altura']  */
+
+        let imc = pessoa.peso / (pessoa.altura * pessoa.altura);
+        console.log("IMC " + imc.toFixed(2)) //.toFixed fixa a quantidade de casas decimais
+
+        //Inserção/atualização de valores de propriedade
+        pessoa.nome = "Penélope Cruz"
+        produtos.descricaoProd = ["Arroz"]
+        produtos.precoProd = [4.99]
+        //Quando já existem valores e você não deseja sobrescrever
+        produtos.descricaoProd = [...produtos.descricaoProd, 'Feijão', 'Trigo']
+        produtos.precoProd = [...produtos.precoProd, 9.99, 4.79]
+
+    </script>
+</body>
+
+</html>
