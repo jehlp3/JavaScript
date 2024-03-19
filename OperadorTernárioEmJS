@@ -1,0 +1,11 @@
+const num = 88
+
+//maneira 1
+if ((num%2) === 0){
+  console.log("O número é par")
+}else{
+  console.log("O número é ímpar")
+}
+
+//operador ternário
+console.log (((num%2)===0) ? "O número é par" : "O número é ímpar")
