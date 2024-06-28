@@ -6,5 +6,5 @@ Nesse projeto foram abordados os seguintes temas: <br>
 🔹Funções<br>
 🔹Arrays<br>
 
-Você pode acessar o projeto hospedado no Vercel através do seguinte link: 
-🔗
+Você pode acessar o projeto hospedado no Vercel através do seguinte link: <br>
+🔗 [Jogo do número secreto](https://jogo-do-numero-secreto-five-blue.vercel.app/)
